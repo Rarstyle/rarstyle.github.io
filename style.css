@@ -1,18 +1,36 @@
-
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-02/1676568561_catherineasquithgallery-com-p-bogatii-zelenii-fon-103.jpg);
     background-size: cover;
-    text-align: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     color: white;
-    font-weight: bold;
 }
 
-h1 {
-    color: goldenrod;
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
+header h1 {
+    color: goldenrod;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #message-el {
@@ -21,22 +39,36 @@ h1 {
 
 .game-button {
     width: 150px;
-    height: 30px;
+    height: 40px;
     background-color: goldenrod;
     color: rgb(7, 95, 7);
     font-weight: 900;
     border: none;
     border-radius: 3px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
+.game-button:hover {
+    background-color: darkgoldenrod;
+}
 
+footer a {
+    color: goldenrod;
+    font-size: 20px;
+    text-decoration: none;
+}
 
+footer a:hover {
+    text-decoration: underline;
+}
 
 p {
-    font-size: 30px;
+    font-size: 20px;
+    margin: 5px 0;
+}
 
+.button-container {
+    display: flex;
+    gap: 10px;
 }
