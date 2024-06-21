@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-02/1676568561_catherineasquithgallery-com-p-bogatii-zelenii-fon-103.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+    
+
+}
+
+#message-el {
+    font-style: italic;
+}
+
+.game-button {
+    width: 150px;
+    height: 30px;
+    background-color: goldenrod;
+    color: rgb(7, 95, 7);
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+
+
+p {
+    font-size: 30px;
+
+}

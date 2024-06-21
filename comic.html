@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        async function ffs() {
+            const email = "ra.sharipov@innopolis.university"
+
+
+            const params1 = new URLSearchParams( {
+                email: email
+            } )
+
+            const idResponse = await fetch  ("https://fwd.innopolis.university/api/hw2?" + params1);
+            const id = await idResponse.json();
+
+            const params2 = new URLSearchParams({
+                id: id
+            })
+
+
+            const imgResponse = await fetch("https://fwd.innopolis.university/api/comic?" + params2);
+
+
+            const imgData = await imgResponse.json();
+
+            const imgElement = document.createElement("img")
+            imgElement.src = imgData.img;
+            imgElement.alt = imgData.alt;
+            
+            const date = new Date(imgData.year, imgData.month, imgData.day).toLocaleDateString();
+            document.body.appendChild(imgElement);
+            console.log(imgElement.src);
+
+            const title = imgData.safe_title;
+            document.getElementById("Site").textContent = title;
+
+        
+            document.getElementById("for-data").textContent = data;
+
+            
+
+
+
+        }
+
+        ffs();
+    </script>
+    <p id="for-data"></p>
+    
+    <title id="Site"></title>
+    
+</head>
+
+<body>
+    
+</body>
+</html>
